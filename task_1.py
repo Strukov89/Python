@@ -44,8 +44,9 @@ def people():
     t = []
     for s in f:
         t.append(s.split(";"))
+        del t[c][dil]
+        c = c + 1
     f.close
-    print(t)
     return static(t)
 
 
